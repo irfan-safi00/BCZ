@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Lost in BCZ</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .error-code {
+            font-size: 10rem;
+            font-weight: 800;
+            color: var(--accent);
+            text-shadow: 0 0 30px var(--accent-glow);
+            line-height: 1;
+        }
+        .glitch-wrapper {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container error-container fade-in">
+        <div class="glitch-wrapper">
+            <h1 class="error-code">404</h1>
+            <h2 class="gradient-text">VOICE CHANNEL NOT FOUND</h2>
+        </div>
+        
+        <p>It seems you've wandered into a restricted area or this link has expired.</p>
+        
+        <div style="margin-top: 2rem;">
+            <a href="/BCZ/" class="btn btn-primary">BACK TO THE HUB</a>
+        </div>
+    </div>
+
+    <script>
+        // Optional: Simple console log for debugging broken links
+        console.log("User hit a 404 at: " + window.location.href);
+    </script>
+</body>
+</html>
