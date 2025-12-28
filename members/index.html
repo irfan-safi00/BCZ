@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCZ Legends | Members</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .search-box {
+            width: 100%;
+            padding: 15px 25px;
+            background: var(--bg-card);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 15px;
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 30px;
+            outline: none;
+        }
+        .search-box:focus { border-color: var(--accent); }
+        
+        .member-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .member-card { text-align: center; }
+        .member-pfp { 
+            width: 100px; height: 100px; border-radius: 50%; 
+            border: 3px solid var(--accent); margin-bottom: 15px; 
+        }
+        .badge {
+            font-size: 0.7rem; padding: 3px 10px; border-radius: 5px;
+            text-transform: uppercase; font-weight: bold;
+        }
+        /* Custom Badge Colors */
+        .staff { background: #ff4757; }
+        .booster { background: #f368e0; }
+        .member { background: #2ecc71; }
+    </style>
+</head>
+<body>
+
+    <div class="container fade-in">
+        <header style="margin-bottom: 50px;">
+            <a href="../" style="color: var(--accent); text-decoration: none;">← BACK TO HUB</a>
+            <h1 class="gradient-text" style="margin-top: 10px;">Member Directory</h1>
+            <p>Meet the 1,500+ legends of Bangali Chill Zone.</p>
+        </header>
+
+        <input type="text" id="memberSearch" class="search-box" placeholder="Search by name or role...">
+
+        <div class="member-grid" id="memberGrid">
+            
+            <div class="glass-card member-card" data-name="Irfan Safi" data-role="staff">
+                <img src="https://github.com/irfan-safi00.png" class="member-pfp">
+                <h3>Irfan Safi</h3>
+                <span class="badge staff">Staff</span>
+                <p style="margin-top: 10px; font-size: 0.9rem;">The developer of BCZ.</p>
+            </div>
+            <div class="glass-card member-card" data-name="Vibe Master" data-role="booster">
+                <img src="https://via.placeholder.com/100" class="member-pfp">
+                <h3>Vibe Master</h3>
+                <span class="badge booster">Booster</span>
+                <p style="margin-top: 10px; font-size: 0.9rem;">Supporting the community.</p>
+            </div>
+            </div>
+    </div>
+
+    <nav class="floating-nav">
+        <a href="../">🏠</a>
+        <a href="./">👑</a>
+        <a href="../roles">💎</a>
+    </nav>
+
+    <script src="member-script.js"></script>
+</body>
+</html>
