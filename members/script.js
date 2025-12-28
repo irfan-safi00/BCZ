@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     filters.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Update Active Button
+            // Update Active Buttons
             filters.forEach(f => f.classList.remove('active'));
             btn.classList.add('active');
 
