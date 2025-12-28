@@ -3,79 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BCZ Roles | Rank System</title>
+    <title>BCZ | Server Roles</title>
     <link rel="stylesheet" href="../style.css">
-    <style>
-        .roles-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 50px; }
-        .role-card { position: relative; border-left: 5px solid var(--accent); }
-        .role-header { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
-        .role-icon { font-size: 2rem; }
-        .perks { list-style: none; padding: 0; }
-        .perks li { margin: 8px 0; color: var(--text-dim); font-size: 0.9rem; display: flex; align-items: center; gap: 8px; }
-        .perks li::before { content: "✓"; color: var(--accent); font-weight: bold; }
-        
-        /* Specific Role Colors */
-        .staff-border { border-color: #ff4757; }
-        .booster-border { border-color: #f368e0; }
-        .vip-border { border-color: #feca57; }
-    </style>
 </head>
 <body>
 
-    <div class="container">
-        <header class="animate-up">
-            <a href="../" class="back-link">← HUB</a>
-            <h1 class="gradient-text">Server Roles</h1>
-            <p>Unlock perks and stand out in the Bangali Chill Zone.</p>
+    <div class="container fade-in">
+        <header style="text-align: center; margin-bottom: 40px;">
+            <a href="../" style="color: var(--accent); text-decoration: none; font-weight: bold;">← BACK TO HUB</a>
+            <h1 class="gradient-text" style="margin-top: 20px;">Server Ranks</h1>
+            <p>Unlock perks and climb the BCZ hierarchy.</p>
         </header>
 
-        <div class="roles-container">
-            <div class="glass-card role-card staff-border animate-card">
-                <div class="role-header">
-                    <span class="role-icon">🛡️</span>
-                    <div>
-                        <h3>Moderator</h3>
-                        <small style="color: #ff4757;">STAFF ONLY</small>
-                    </div>
+        <div class="nav-grid">
+            <div class="glass-card">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <span style="font-size: 2rem;">🛡️</span>
+                    <h3>Moderator</h3>
                 </div>
-                <ul class="perks">
-                    <li>Access to Staff Lounge</li>
-                    <li>Manage Messages & Users</li>
-                    <li>Custom Profile Color</li>
+                <p style="margin-top: 10px;">Keep the vibe safe. Staff roles are invite-only based on activity.</p>
+                <ul style="color: var(--text-secondary); margin-left: 20px; font-size: 0.9rem;">
+                    <li>Manage Channels</li>
+                    <li>Exclusive Badge</li>
                 </ul>
             </div>
 
-            <div class="glass-card role-card booster-border animate-card">
-                <div class="role-header">
-                    <span class="role-icon">💎</span>
-                    <div>
-                        <h3>Server Booster</h3>
-                        <small style="color: #f368e0;">SUPPORT THE ZONE</small>
-                    </div>
+            <div class="glass-card">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <span style="font-size: 2rem;">💎</span>
+                    <h3>Server Booster</h3>
                 </div>
-                <ul class="perks">
-                    <li>Image Permissions in General</li>
-                    <li>Exclusive Booster Chat</li>
-                    <li>External Emoji Usage</li>
-                </ul>
-            </div>
-
-            <div class="glass-card role-card vip-border animate-card">
-                <div class="role-header">
-                    <span class="role-icon">👑</span>
-                    <div>
-                        <h3>VIP Member</h3>
-                        <small style="color: #feca57;">LOYALTY RANK</small>
-                    </div>
-                </div>
-                <ul class="perks">
-                    <li>Priority Voice Channel access</li>
-                    <li>Unique Badge in Directory</li>
-                    <li>Early Event Invites</li>
+                <p style="margin-top: 10px;">Support the zone. Boosters get the pink glow and image perms.</p>
+                <ul style="color: var(--text-secondary); margin-left: 20px; font-size: 0.9rem;">
+                    <li>Upload External Emojis</li>
+                    <li>Priority Voice Access</li>
                 </ul>
             </div>
         </div>
     </div>
-.
+
+    <nav class="floating-nav">
+        <a href="../">🏠</a>
+        <a href="../members/">👑</a>
+        <a href="./">💎</a>
+    </nav>
+
 </body>
 </html>
